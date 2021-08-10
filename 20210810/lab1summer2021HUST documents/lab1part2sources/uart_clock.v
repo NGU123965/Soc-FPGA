@@ -72,18 +72,19 @@ module uart_clock
 (	tx,
 	rx,
 	alarm,
-	clk);
+	clk,
+	lock);
 
 output	tx;
 input 	rx;
 output 	alarm;
 input 	clk;
+output  lock;
 
 wire   	tx;
 wire   	rx;
 reg   	alarm;
 wire   	clk;
-
 
 //
 //----------------------------------------------------------------------------------
@@ -166,6 +167,8 @@ uclock program_rom
    	.clk(clk55MHz));
 
 // Insert DCM component here
+
+my_dcm_55MHz ClockUNit(.locked(lock), .clk_out55MHz(clk55MHz), .clk_in_125MHz(clk));
 
 //
 //--------------------------------------------------------------------------------------------------------------------------------
