@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../gate3versions.srcs/sources_1/imports/gate3versions/Gate3Table.v"
+verilog xil_defaultlib  "../../../gate3versions.srcs/sources_1/imports/gate3versions/Gate3gates.v"
+verilog xil_defaultlib  "../../../gate3versions.srcs/sources_1/imports/gate3versions/Gate3expression.v"
+verilog xil_defaultlib  "../../../gate3versions.srcs/sources_1/imports/gate3versions/Gate3Assign.v"
+verilog xil_defaultlib  "../../../gate3versions.srcs/sim_1/imports/gate3versions/Gate3TestAbsolute.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

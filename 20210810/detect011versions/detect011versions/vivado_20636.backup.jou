@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Aug 08 15:13:44 2021
+# Process ID: 20636
+# Current directory: C:/Xilinx/SHCodesign2021/detect011versions
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18292 C:\Xilinx\SHCodesign2021\detect011versions\detect011versions.xpr
+# Log file: C:/Xilinx/SHCodesign2021/detect011versions/vivado.log
+# Journal file: C:/Xilinx/SHCodesign2021/detect011versions\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/SHCodesign2021/detect011versions/detect011versions.xpr
+import_files -norecurse {C:/Xilinx/SHCodesign2021/detect011versions/detect011withExpressions.v C:/Xilinx/SHCodesign2021/detect011versions/detect011StateMachine.v C:/Xilinx/SHCodesign2021/detect011versions/detect011StateMachineV1.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Xilinx/SHCodesign2021/detect011versions/detect011TB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation
+source detect011_test_circuit.tcl
+close_sim

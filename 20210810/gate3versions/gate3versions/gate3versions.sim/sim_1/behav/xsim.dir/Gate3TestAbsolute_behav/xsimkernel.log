@@ -1,0 +1,7 @@
+Running: xsim.dir/Gate3TestAbsolute_behav/xsimk.exe -simmode gui -wdb Gate3TestAbsolute_behav.wdb -simrunnum 0 -socket 54315
+Design successfully loaded
+Design Loading Memory Usage: 9428 KB (Peak: 9428 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9948 KB (Peak: 9948 KB)
+Simulation CPU Usage: 15 ms

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Aug 08 15:41:27 2021
+# Process ID: 12728
+# Current directory: C:/Xilinx/SHCodesign2021/detect011versions/detect011versions.runs/synth_1
+# Command line: vivado.exe -log detect011Expressions.vds -mode batch -messageDb vivado.pb -notrace -source detect011Expressions.tcl
+# Log file: C:/Xilinx/SHCodesign2021/detect011versions/detect011versions.runs/synth_1/detect011Expressions.vds
+# Journal file: C:/Xilinx/SHCodesign2021/detect011versions/detect011versions.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source detect011Expressions.tcl -notrace

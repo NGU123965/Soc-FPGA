@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1628546723">
+  <File Type="PA-TCL" Name="Stopwatch2021summerNexysA7.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Stopwatch2021summerNexysA7_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Stopwatch2021summerNexysA7.vds"/>
+  <File Type="RDS-UTIL" Name="Stopwatch2021summerNexysA7_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Stopwatch2021summerNexysA7_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Stopwatch2021summerNexysA7.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Stopwatch2021summerNexysA7_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Stopwatch2021summerNexysA7_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/DelayLoop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/DelayLoop.v"/>
+        <Attr Name="ImportTime" Val="1600923128"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/DisplayMuxNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/DisplayMuxNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1600836513"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/PositiveClockedOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/PositiveClockedOneShot.v"/>
+        <Attr Name="ImportTime" Val="1600878319"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/Debouncer2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/Debouncer2020fall.v"/>
+        <Attr Name="ImportTime" Val="1600923525"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/Refreshing7SegNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/Refreshing7SegNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1600838715"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/UniversalCounter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/UniversalCounter.v"/>
+        <Attr Name="ImportTime" Val="1395753512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/SevenSegDriverNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/SevenSegDriverNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1600830976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/StopwatchController2020fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/StopwatchController2020fall.v"/>
+        <Attr Name="ImportTime" Val="1600923578"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/BCDto7Segment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/BCDto7Segment.v"/>
+        <Attr Name="ImportTime" Val="1350859244"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/Pulse10millisecond.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/Pulse10millisecond.v"/>
+        <Attr Name="ImportTime" Val="1600878417"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/stopwatch_sources/Stopwatch2020FallNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch_sources/Stopwatch2020FallNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1600892562"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Stopwatch2021summerNexysA7"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/stopwatch2021summerlNexyA7/stopwatch2021summerNexyA7.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/stopwatch2021summerNexyA7.xdc"/>
+        <Attr Name="ImportTime" Val="1628545676"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

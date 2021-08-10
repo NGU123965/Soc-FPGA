@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterControllerUnitBy3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit_by_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterDataUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterStateMachine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CounterStateMachine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/counterImplicit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterImplicit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL_by_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binary_Counter_Part_RTL_by_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binary_Counter_Part_RTL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_part_RTL_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Binary_Counter_part_RTL_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,1 @@
+-wto "c5d4700121464372b996becd1916b014" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Gate3TestAbsolute_behav" "xil_defaultlib.Gate3TestAbsolute" "xil_defaultlib.glbl" -log "elaborate.log" 

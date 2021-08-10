@@ -1,0 +1,36 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 0fd14e315235478da37f61ee6ee98489 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Binary_Counter_part_RTL_TB_behav xil_defaultlib.Binary_Counter_part_RTL_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 5 for port count [C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_part_RTL_TB.v:14]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL.v" Line 2. Module Binary_Counter_Part_RTL doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterController.v" Line 2. Module Control_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterDataUnit.v" Line 2. Module Datapath_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/counterImplicit.v" Line 2. Module counterImplicit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterStateMachine.v" Line 2. Module CounterStateMachine doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL_by_3.v" Line 2. Module Binary_Counter_Part_RTL_by_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterControllerUnitBy3.v" Line 1. Module Control_Unit_by_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterDataUnit.v" Line 2. Module Datapath_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL.v" Line 2. Module Binary_Counter_Part_RTL doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterController.v" Line 2. Module Control_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterDataUnit.v" Line 2. Module Datapath_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/counterImplicit.v" Line 2. Module counterImplicit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterStateMachine.v" Line 2. Module CounterStateMachine doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/Binary_Counter_Part_RTL_by_3.v" Line 2. Module Binary_Counter_Part_RTL_by_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterControllerUnitBy3.v" Line 1. Module Control_Unit_by_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Xilinx/SHCodesign2021/FourCounters/FourCounters.srcs/sources_1/imports/FourCounters/CounterDataUnit.v" Line 2. Module Datapath_Unit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Datapath_Unit
+Compiling module xil_defaultlib.Binary_Counter_Part_RTL
+Compiling module xil_defaultlib.counterImplicit
+Compiling module xil_defaultlib.CounterStateMachine
+Compiling module xil_defaultlib.Control_Unit_by_3
+Compiling module xil_defaultlib.Binary_Counter_Part_RTL_by_3
+Compiling module xil_defaultlib.Binary_Counter_part_RTL_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Binary_Counter_part_RTL_TB_behav

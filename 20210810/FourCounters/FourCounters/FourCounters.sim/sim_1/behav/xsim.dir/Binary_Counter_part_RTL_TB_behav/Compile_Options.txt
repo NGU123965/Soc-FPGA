@@ -1,0 +1,1 @@
+-wto "0fd14e315235478da37f61ee6ee98489" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Binary_Counter_part_RTL_TB_behav" "xil_defaultlib.Binary_Counter_part_RTL_TB" "xil_defaultlib.glbl" -log "elaborate.log" 
