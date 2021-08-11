@@ -33,7 +33,7 @@ module MultiplierBehavior(
     input [1:0] A,B,
     output reg [2:0] Product
 );
-    always @(A or B) begin
+    always @(A,B) begin
         Product = A * B;
     end
 endmodule
@@ -44,8 +44,8 @@ module MultiplierExpression(
     input [1:0] A,B,
     output reg [2:0] Product
 );
-    assign Product[2] = (A[1]&B[1]) | (!A[0]) | (!B[0]);
-    assign Product[1] = ((!A[1])&A[0]&B[1]) | (A[1]&(!A[0])&B[0]) | (A[1]&A[0]&(!B[1])&B[0]) | (A[1]&A[0]&B[1]&(!B[0]));
+    assign Product[2] = (A[1]&(!A[0])&B[1]) | (A[1]&B[1]&(!B[0]));
+    assign Product[1] = ((!A[1]&A[0]&B[1]) | (A[0]&B[1]&(!B[0])) | (A[1]&(!A[0])&B[0]) | (A[1]&(!B[1])&B[0]));
     assign Product[0] = A[0] & B[0];
 endmodule
 ```
@@ -56,9 +56,9 @@ module MultiplierGates(
     input [1:0] A,B,
     output reg [2:0] Product
 );
-    or P2(Product[2],A[1]&B[1],!A[0],!B[0]);
-    or P1(Product[1],(!A[1])&A[0]&B[1],A[1]&(!A[0])&B[0],A[1]&A[0]&(!B[1])&B[0],A[1]&A[0]&B[1]&(!B[0]));
-    and P0(Product[0],A[0],B[0]);
+    or P2(Product[2], (A[1]&(!A[0])&B[1]), (A[1]&B[1]&(!B[0])));
+    or P1(Product[1], (!A[1]&A[0]&B[1]), (A[0]&B[1]&(!B[0])), (A[1]&(!A[0])&B[0]), (A[1]&(!B[1])&B[0]));
+    and P0(Product[0], A[0], B[0]);
 endmodule
 ```
 
@@ -157,6 +157,121 @@ endmodule
 ![Problem5 figure](<./problem5.jpg>)
 ## PROBLEM  6
 ![Problem6 figure](<./problem6.jpg>)
-## PROBLEM  7
 
+## PROBLEM  7
+### Code
+* hw1p7summer2020HUSTdetect11010.v
+```verilog
+`timescale 1ns / 100ps   
+// File name : hw1p7summer2020HUSTdetect11010.v   
+// Cunyang Liu  
+// Summer 2021 HUST   
+// Problem 7, Homework #1, summer 2021   
+// Detect sequence of 11010 recursively.   
+module hw1p5summer20201HUSTdetect11010(input InputBit, CLK, Reset, output reg Detected11010);   
+// State variables   
+reg [2:0] CurrentState, NextState;   
+// State codes   
+parameter SInitial = 3'd0,S1 = 3'd1, S11 = 3'd2, S110= 3'd3, S1101=3'd4, S11010=3'd5;
+    
+always @ (posedge CLK or negedge Reset)   
+begin  
+if (!Reset)  
+  CurrentState <= SInitial;  
+else  
+  CurrentState <= NextState;  
+end  
+  
+always @ (*) begin  
+case (CurrentState)  
+  SInitial:   
+    if (InputBit == 1)
+        NextState <= S1;  
+    else
+        NextState <= SInitial;  
+  S1:  
+    if (InputBit == 1)
+        NextState <= S11;  
+    else
+        NextState <= SInitial;  
+  S11:  
+    if (InputBit == 1)
+        NextState <= S11;
+    else
+        NextState <= S110;  
+  S110:   
+    if (InputBit == 1)
+        NextState <= S1101;  
+    else
+        NextState <= SInitial;  
+  S1101:   
+    if (InputBit == 1)
+        NextState <= S11;  
+    else
+        NextState <= S11010;  
+  S11010:   
+    if (InputBit == 1)
+        NextState <= S1;  
+    else
+        NextState <= SInitial;  
+  default:  
+        NextState <= SInitial;  
+endcase  
+end  
+  
+//the output depends on the current state  
+always @ (*) begin
+    if (CurrentState == S11010) 
+        Detected11010 <= 1;
+    else
+        Detected11010 <= 0;
+end    
+endmodule
+```
+* hw1p7summer2021HUSTdetect11010_tb.v
+```verilog
+`timescale 1ns / 1ps
+//Summer 2021 HUST
+module hw1p7summer2021HUSTdetect11010_tb;   
+reg x, clk, reset;   
+wire detected;   
+wire [2:0] CurrentState=Unit1.CurrentState;
+  
+always #5 clk = ~clk;
+    initial begin
+        clk = 0;
+        reset = 0;
+        x = 0;  
+        #6 reset=1;
+        #6 x=1;  
+  		#10 x = 1;  
+  		#10 x = 0;  
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 1;  
+        #10 x = 1;  
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 1;  
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 0;  
+        #10 x = 1;  
+        #10 x = 1;  
+        #10 x = 0;  
+        #10 x = 1;  
+        #10 x = 0;
+    end
+    hw1p5summer20201HUSTdetect11010 Unit1(x, clk, reset,detected);  
+endmodule  
+```
+### Figure
+
+* problem7_RTL_schematic
+![Problem7 figure](<./problem7_RTL_schematic.jpg>)
+* problem7_waveform
+![Problem7 figure](<./problem7_waveform.jpg>)
 ## PROBLEM  8
+
