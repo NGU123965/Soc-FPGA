@@ -11,7 +11,7 @@
 ### Code
 * Problem2.v
 
-  ```verilog
+```verilog
   `timescale 1ns / 1ps 
   //Problem 2 Homework #1 summer 2021 HUST 
   module p2hw1summer2021HUST(input I1,I2,I3,I4,output Straight,Tum)
@@ -23,7 +23,7 @@
       and U5(Straight,OUT1,OUT3);
       not U6(Tum,OUT4);
   endmodule
-  ```
+```
 
 ## PROBLEM  3
 ### Code
@@ -273,5 +273,234 @@ endmodule  
 ![Problem7 figure](<./problem7_RTL_schematic.jpg>)
 * problem7_waveform
 ![Problem7 figure](<./problem7_waveform.jpg>)
-## PROBLEM  8
 
+## PROBLEM  8
+### 8.(a)
+* TxDataUnit_summer2021HUST.v
+
+```verilog
+`timescale 1ns / 1ps 
+module TxDataUnit_summer2021HUST #(parameter DataLength=9)(
+    input [DataLength-1:0] Data,
+    input Load, ShiftOut, Parity, Reset, Clock,
+    output Tx);
+    reg [11:0] ShiftRegister;
+    wire ParityBit;
+    assign Tx=ShiftRegister[0];
+    assign ParityBit=Parity^Data[0]^Data[1]^Data[2]^Data[3]^Data[4]^Data[5]^Data[6]^Data[7]^Data[8]; 
+    always@(posedge Clock)
+        if (Reset==1 || Load==1)
+            ShiftRegister<={ParityBit, Data, 2'b01};
+    else if (ShiftOut == 1)
+        ShiftRegister <= {ShiftRegister[0], ShiftRegister[11:1]};
+    else ShiftRegister<=ShiftRegister; 
+endmodule
+```
+
+* TxDataUnitTB_summer2021HUST.v
+```verilog
+`timescale 1ns / 1ps
+module TxDataUnitTB_summer2021HUST;
+    reg Load, Parity, ShiftOut, Reset, Clock;
+    reg [8:0] Data;
+    wire Tx; 
+ 	wire [11:0] ShiftRegister=uut.ShiftRegister;
+    
+    TxDataUnit_summer2021HUST uut (.Load(Load), .Data(Data), .Parity(Parity),.Tx(Tx), 
+ .ShiftOut(ShiftOut), .Reset(Reset), .Clock(Clock));
+    
+    initial begin 
+        Load = 0; Data = 0; Parity = 0; ShiftOut = 0; Reset = 0; Clock = 0; 
+    end
+    always #3 Clock=~Clock; 
+ 	initial fork
+        #0 Load = 0; #21 Load = 1; #32 Load = 0; #56 Load = 0; #152 Load = 1; 
+ 		#165 Load = 0; 
+ 		#0 Data = 8'b010010111; #56 Data = 8'b011100010; 
+ 		#0 Parity = 1; #34 Parity = 1; #78 Parity = 0; #134 Parity = 1; 
+ 		#0 ShiftOut = 0; #38 ShiftOut = 1; #148 ShiftOut = 0; #167 ShiftOut = 1; 
+ 		#284 ShiftOut = 0; 
+ 		#0 Reset = 1; #12 Reset = 0; 
+ 		#300 $stop;
+    join 
+endmodule
+```
+* Simulation Waveforms
+
+![Problem8 figure](<./problem8_TxDataUnit_debug.jpg>)
+
+* TxModule_Toplevel_summer2021HUST.v
+```verilog
+`timescale 1ns / 1ps
+module TxModule_Toplevel_summer2021HUST(input Start, Parity, Reset, Clock,
+                                        input [8:0] Data,
+                                        input [3:0] Speed, // baud in the number of clock cycles
+                                        output Tx);
+    wire Load, ShiftOut;
+    TxController_summer2021HUST ControlUnit(Start, Reset, Clock, Speed, Load, ShiftOut);
+    TxDataUnit_summer2021HUST DataUnit(Data, Load, ShiftOut, Parity, Reset, Clock, Tx);
+
+endmodule
+```
+* TxController_summer2021HUST.v
+```verilog
+`timescale 1ns / 1ps
+module TxController_summer2021HUST(
+    input Start, Reset, Clock,
+    input [3:0] Speed,
+    output reg Load, reg ShiftOut
+);
+    // State variables
+    reg [2:0] CurrentState;
+
+    // Counter
+    reg StartDelay;
+    reg [3:0] DataCounter;
+    wire delay_timeout;
+
+    // State codes
+    parameter InitialState = 3'd0, LoadState = 3'd1, DelayState = 3'd2, ShiftState= 3'd3;
+
+    // module DelayTime(Start, Speed, Timeout,Reset, Clock);
+    DelayTime_summer2021HUST DelayUnit(StartDelay, Speed, delay_timeout, Reset, Clock);
+
+    initial begin
+        CurrentState = InitialState;
+        StartDelay = 0;
+        DataCounter = 0;
+    end
+
+    always @(posedge Clock or posedge Reset) begin
+        if (Reset) begin
+            // reset
+            CurrentState <= InitialState;
+        end
+        else begin
+            case (CurrentState)
+                InitialState:begin
+                    CurrentState = (Start) ? LoadState : InitialState;
+                end
+                LoadState:begin
+                    CurrentState = DelayState;
+                end
+                DelayState:begin
+                    CurrentState = (delay_timeout) ? ShiftState : DelayState;
+                end
+                ShiftState:begin
+                    CurrentState = (DataCounter < 12) ? DelayState : InitialState;
+                end
+            endcase
+        end
+    end
+
+    always @(posedge Clock) begin
+        case (CurrentState)
+            InitialState:begin
+                StartDelay <= 0;
+                DataCounter <= 0;
+                ShiftOut <= 0;
+                Load <= 0;
+                StartDelay = 0;
+            end
+            LoadState:begin
+                DataCounter <= 1;
+                Load <= 1;
+                ShiftOut <= 0;
+                StartDelay <= 0;
+            end
+            DelayState:begin
+                DataCounter <= DataCounter;
+                Load <= 0;
+                ShiftOut <= 0;
+                StartDelay <= 1;
+            end
+            ShiftState:begin
+                DataCounter <= DataCounter + 1;
+                Load <= 0;
+                ShiftOut <= 1;
+                StartDelay <= 0;
+            end
+        endcase
+    end
+endmodule
+```
+* DelayTime_summer2021HUST.v
+```verilog
+`timescale 1ns / 1ps
+module DelayTime_summer2021HUST(Start, Speed, Timeout,Reset, Clock);
+    //delay time in number of clock cycles as speficied by Speed
+    parameter   NumberOfBits = 4;
+    input       Start, Reset, Clock;
+    input       [NumberOfBits-1:0] Speed;
+    output reg  Timeout;
+    reg         [NumberOfBits-1:0] count;
+
+    always @ (count or Speed)
+        if (count == (Speed-1'b1))
+            Timeout <= 1'b1;
+        else
+            Timeout <= 0;
+
+    always @ (posedge Clock)
+        if(Reset == 1)
+            count <= 4'd0;
+        else if(Start == 0)
+            count <= 4'd0;
+        else if (count >= (Speed-1'b1))
+            count <= 4'd0;
+        else
+            count <= count + 1'b1;
+endmodule
+```
+
+* TxModule_Toplevel_summer2021HUSTTB.v
+```verilog
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2021/08/12 01:48:47
+// Design Name: 
+// Module Name: TxModule_Toplevel_summer2021HUSTTB
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module TxModule_Toplevel_summer2021HUSTTB;
+// Inputs 
+ reg Start; 
+ reg [8:0] Data; 
+ reg [3:0] Speed; 
+ reg Parity, Reset, Clock;
+ wire Tx;
+ 
+  TxModule_Toplevel_summer2021HUST TopLevel (Start, Parity, Reset, Clock, 
+  Data, Speed, Tx); 
+  initial begin Start = 0; Data = 0; Speed = 0; Parity = 0; Reset = 0; Clock = 0; end 
+  always #4 Clock=~Clock; 
+  initial fork 
+  #0 Reset = 1; #14 Reset = 0; 
+  #0 Start = 0; #23 Start = 1; #45 Start = 0; #388 Start = 1; #403 Start = 0; 
+  #0 Data = 9'b100101110; #298 Data = 9'b101010110; 
+  #0 Speed = 1; #349 Speed = 3; 
+  #0 Parity = 1; #200 Parity = 0; 
+  #750 $stop; 
+  join
+  
+endmodule
+```
+
+* waveform
+
+![Problem8 figure](<./problem8_result.jpg>)
