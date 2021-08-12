@@ -1,0 +1,62 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Aug 11 17:33:25 2021
+| Host         : RHIT-R90XZ2Q6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TransmitRAM2021summer_control_sets_placed.rpt
+| Design       : TransmitRAM2021summer
+| Device       : xc7z010
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              17 |            5 |
+| Yes          | No                    | No                     |              21 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               3 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+---------------------------------+------------------------------------+------------------+----------------+
+|            Clock Signal           |          Enable Signal          |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------------+---------------------------------+------------------------------------+------------------+----------------+
+|  ClockUnit50MHz/inst/clk_out50MHz |                                 | TransmitUnit/kcuart/Tx_start       |                1 |              1 |
+|  ClockUnit50MHz/inst/clk_out50MHz | BaudRateUnit/en_16_x_baud       | TransmitUnit/kcuart/Tx_start       |                1 |              3 |
+|  ClockUnit50MHz/inst/clk_out50MHz | TransmitUnit/buf_0/data_present |                                    |                1 |              4 |
+|  ClockUnit50MHz/inst/clk_out50MHz | ControlUnit/Address[4]_i_1_n_0  |                                    |                2 |              5 |
+|  ClockUnit50MHz/inst/clk_out50MHz |                                 |                                    |                2 |              6 |
+|  ClockUnit50MHz/inst/clk_out50MHz | BaudRateUnit/en_16_x_baud       |                                    |                3 |              6 |
+|  ClockUnit50MHz/inst/clk_out50MHz | RAMUnit/OutputValue[6]_i_1_n_0  |                                    |                1 |              7 |
+|  ClockUnit50MHz/inst/clk_out50MHz | TransmitUnit/buf_0/valid_write  |                                    |                1 |              8 |
+|  ClockUnit50MHz/inst/clk_out50MHz |                                 | BaudRateUnit/baud_count[0]_i_1_n_0 |                4 |             16 |
++-----------------------------------+---------------------------------+------------------------------------+------------------+----------------+
+
+

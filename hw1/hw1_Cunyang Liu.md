@@ -1,7 +1,6 @@
 # HOMEWORK 1
 
----
-
+Cunyang Liu   U201811446
 ## PROBLEM  1
 
 ### Figure
@@ -9,6 +8,7 @@
 
 ## PROBLEM  2
 ### Code
+
 * Problem2.v
 
 ```verilog
@@ -242,27 +242,27 @@ always #5 clk = ~clk;
         clk = 0;
         reset = 0;
         x = 0;  
-        #6 reset=1;
-        #6 x=1;  
-  		#10 x = 1;  
-  		#10 x = 0;  
-        #10 x = 1;  
-        #10 x = 0;  
-        #10 x = 1;  
-        #10 x = 1;  
-        #10 x = 1;  
-        #10 x = 0;  
-        #10 x = 1;  
-        #10 x = 1;  
-        #10 x = 0;  
-        #10 x = 1;  
-        #10 x = 0;  
-        #10 x = 0;  
-        #10 x = 1;  
-        #10 x = 1;  
-        #10 x = 0;  
-        #10 x = 1;  
-        #10 x = 0;
+        #8 reset=1;
+        #8 x=1;  
+  		#15 x = 1;  
+  		#15 x = 0;  
+        #15 x = 1;  
+        #15 x = 0;  
+        #15 x = 1;  
+        #15 x = 1;  
+        #15 x = 1;  
+        #15 x = 0;  
+        #15 x = 1;  
+        #15 x = 1;  
+        #15 x = 0;  
+        #15 x = 1;  
+        #15 x = 0;  
+        #15 x = 0;  
+        #15 x = 1;  
+        #15 x = 1;  
+        #15 x = 0;  
+        #15 x = 1;  
+        #15 x = 0;
     end
     hw1p5summer20201HUSTdetect11010 Unit1(x, clk, reset,detected);  
 endmodule  
@@ -272,7 +272,7 @@ endmodule  
 * problem7_RTL_schematic
 ![Problem7 figure](<./problem7_RTL_schematic.jpg>)
 * problem7_waveform
-![Problem7 figure](<./problem7_waveform.jpg>)
+![Problem7 figure](<./problem7_waveforms.jpg>)
 
 ## PROBLEM  8
 ### 8.(a)
@@ -456,48 +456,37 @@ endmodule
 * TxModule_Toplevel_summer2021HUSTTB.v
 ```verilog
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2021/08/12 01:48:47
-// Design Name: 
-// Module Name: TxModule_Toplevel_summer2021HUSTTB
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module TxModule_Toplevel_summer2021HUSTTB;
 // Inputs 
- reg Start; 
- reg [8:0] Data; 
- reg [3:0] Speed; 
- reg Parity, Reset, Clock;
- wire Tx;
- 
-  TxModule_Toplevel_summer2021HUST TopLevel (Start, Parity, Reset, Clock, 
-  Data, Speed, Tx); 
-  initial begin Start = 0; Data = 0; Speed = 0; Parity = 0; Reset = 0; Clock = 0; end 
-  always #4 Clock=~Clock; 
-  initial fork 
-  #0 Reset = 1; #14 Reset = 0; 
-  #0 Start = 0; #23 Start = 1; #45 Start = 0; #388 Start = 1; #403 Start = 0; 
-  #0 Data = 9'b100101110; #298 Data = 9'b101010110; 
-  #0 Speed = 1; #349 Speed = 3; 
-  #0 Parity = 1; #200 Parity = 0; 
-  #750 $stop; 
-  join
-  
+    reg Start; 
+ 	reg [8:0] Data; 
+ 	reg [3:0] Speed; 
+ 	reg Parity, Reset, Clock;
+ 	wire Tx;
+    
+    TxModule_Toplevel_summer2021HUST TopLevel (Start, Parity, Reset, Clock, Data, Speed, Tx); 
+  	initial begin 
+        Start = 0; Data = 0; Speed = 0; Parity = 0; Reset = 0; Clock = 0; 
+    end
+    always 
+        #4 Clock=~Clock;
+    initial fork 
+  		#0 Reset = 1; 
+  		#0 Start = 0;   
+  		#0 Data = 9'b100101110; 
+  		#0 Speed = 1; 
+  		#0 Parity = 1;  
+        #14 Reset = 0;
+        #23 Start = 1; 
+        #45 Start = 0;
+        #200 Parity = 0;
+        #298 Data = 9'b101010110; 
+        #349 Speed = 3; 
+        #388 Start = 1;
+        #403 Start = 0; 
+  		#750 $stop;
+    join
 endmodule
 ```
 

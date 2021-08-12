@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="SystemClk60MHz_synth_1" LaunchDir="C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.runs/SystemClk60MHz_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,0 +1,1862 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Aug 11 20:31:53 2021
+# Process ID: 3388
+# Current directory: C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20076 C:\Xilinx\SHCodesign2021\lab2summer2021HUST_I2C\lab2ph2tmp101summer2021template\lab2ph2tmp101summer2021template.xpr
+# Log file: C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/vivado.log
+# Journal file: C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+remove_files -fileset constrs_1 C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/constrs_1/imports/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021conwtraints.xdc
+file delete -force C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/constrs_1/imports/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021conwtraints.xdc
+add_files -fileset constrs_1 -norecurse C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021constraints.xdc
+import_files -fileset constrs_1 C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021constraints.xdc
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021constraints.xdc
+Hint: use the '-force' option to overwrite the local copies.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2phase2sources/ControllerReadTMP101_tb.v C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2phase2sources/I2C_SDAmodule_tb.v C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2phase2sources/I2C_Controller_phase1_tb.v C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2phase2sources/I2C_BaudRateGenerator_tb.v}
+update_compile_order -fileset sim_1
+set_property top Lab2I2Cphase2TMP101summer2021template [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name SystemClk60MHz
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_08: 1145	-CLKOUT0 Register 1
+DADDR_09: 0000	-CLKOUT0 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+set_property -dict [list CONFIG.PRIM_IN_FREQ {125.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {60.000} CONFIG.USE_RESET {false} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {40.500} CONFIG.MMCM_CLKIN1_PERIOD {8.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.875} CONFIG.CLKOUT1_JITTER {231.736} CONFIG.CLKOUT1_PHASE_ERROR {234.038}] [get_ips SystemClk60MHz]
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+generate_target {instantiation_template} [get_files c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SystemClk60MHz'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'SystemClk60MHz'...
+export_ip_user_files -of_objects [get_files c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci]
+launch_run -jobs 6 SystemClk60MHz_synth_1
+[Wed Aug 11 20:35:55 2021] Launched SystemClk60MHz_synth_1...
+Run output will be captured here: C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.runs/SystemClk60MHz_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci] -directory C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files/sim_scripts -ip_user_files_dir C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files -ipstatic_source_dir C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files/ipstatic -force -quiet
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+set_property -dict [list CONFIG.PRIMARY_PORT {clk_in125MHz} CONFIG.CLK_OUT1_PORT {clk_out60MHz}] [get_ips SystemClk60MHz]
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0A: 1041	-CLKOUT1 Register 1
+DADDR_0B: 00c0	-CLKOUT1 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0C: 1041	-CLKOUT2 Register 1
+DADDR_0D: 00c0	-CLKOUT2 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_0E: 1041	-CLKOUT3 Register 1
+DADDR_0F: 00c0	-CLKOUT3 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_10: 1041	-CLKOUT4 Register 1
+DADDR_11: 00c0	-CLKOUT4 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_06: 1041	-CLKOUT5 Register 1
+DADDR_07: 00c0	-CLKOUT5 Register 2
+DADDR_09: 7c00	-CLKOUT0 Register 1
+DADDR_08: 11c7	-CLKOUT0 Register 2
+DADDR_07: 1c00	-CLKOUT0 Register Shared with CLKOUT5
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+
+	WARNING: Min duty cycle violation 0.500 < 1.0
+	         Changing dutycycle to 1.0
+
+
+	WARNING: Max duty cycle is 1.0 > 0.0
+	         Changing dutycycle to 0.0
+
+DADDR_12: 1041	-CLKOUT6 Register 1
+DADDR_13: 00c0	-CLKOUT6 Register 2
+generate_target all [get_files  c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'SystemClk60MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'SystemClk60MHz'...
+export_ip_user_files -of_objects [get_files c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci] -no_script -force -quiet
+reset_run SystemClk60MHz_synth_1
+launch_run -jobs 6 SystemClk60MHz_synth_1
+[Wed Aug 11 20:37:14 2021] Launched SystemClk60MHz_synth_1...
+Run output will be captured here: C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.runs/SystemClk60MHz_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xci] -directory C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files/sim_scripts -ip_user_files_dir C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files -ipstatic_source_dir C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.ip_user_files/ipstatic -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: Lab2I2Cphase2TMP101summer2021template
+WARNING: [Synth 8-2507] parameter declaration becomes local in TemperatureRAM2021summer with formal parameter declaration list [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:14]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:18 ; elapsed = 00:06:49 . Memory (MB): peak = 1005.000 ; gain = 797.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Lab2I2Cphase2TMP101summer2021template' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:15]
+	Parameter I2CBaudRate bound to: 20'b00000011101010011000 
+	Parameter ClockFrequency bound to: 30'b000011100100111000011100000000 
+	Parameter RAMAddressSize bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SystemClk60MHz' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/.Xil/Vivado-3388-RHIT-R90XZ2Q6/realtime/SystemClk60MHz_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'SystemClk60MHz' (1#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/.Xil/Vivado-3388-RHIT-R90XZ2Q6/realtime/SystemClk60MHz_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'ClockedPositiveOneShot' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v:7]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedPositiveOneShot' (2#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v:7]
+INFO: [Synth 8-638] synthesizing module 'ReadTMP101summer2021' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v:12]
+INFO: [Synth 8-638] synthesizing module 'I2C_BaudRateGenerator' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'I2C_BaudRateGenerator' (3#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'ControllerReadTMP101template' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:18]
+	Parameter InitialState bound to: 4'b0000 
+	Parameter StartState bound to: 4'b0001 
+	Parameter LoadState bound to: 4'b0010 
+	Parameter WriteState bound to: 4'b0011 
+	Parameter AcknowledgeState1 bound to: 4'b0100 
+	Parameter ConnectedState bound to: 4'b0101 
+	Parameter ReadState bound to: 4'b0110 
+	Parameter WaitState bound to: 4'b0111 
+	Parameter AcknowledgeState2 bound to: 4'b1000 
+	Parameter TransitState bound to: 4'b1001 
+	Parameter StopState bound to: 4'b1010 
+INFO: [Synth 8-638] synthesizing module 'DelayTimeReset' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/DelayTimeReset.v:7]
+	Parameter MaxCount bound to: 10000 - type: integer 
+	Parameter NumberOfBits bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DelayTimeReset' (4#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/DelayTimeReset.v:7]
+INFO: [Synth 8-638] synthesizing module 'ClockedNegativeOneShot' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v:7]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedNegativeOneShot' (5#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v:7]
+WARNING: [Synth 8-3848] Net WriteLoad in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+WARNING: [Synth 8-3848] Net ReadorWrite in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+WARNING: [Synth 8-3848] Net ShiftorHold in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+WARNING: [Synth 8-3848] Net Select in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+WARNING: [Synth 8-3848] Net BaudEnable in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+WARNING: [Synth 8-3848] Net StartStopAck in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:20]
+WARNING: [Synth 8-3848] Net DONE in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:20]
+WARNING: [Synth 8-3848] Net StartDelayLoop in module/entity ControllerReadTMP101template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:30]
+INFO: [Synth 8-256] done synthesizing module 'ControllerReadTMP101template' (6#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:18]
+INFO: [Synth 8-638] synthesizing module 'I2C_DataUnit' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_DataUnit.v:11]
+	Parameter LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'I2C_ShiftRegister' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v:8]
+	Parameter LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'I2C_ShiftRegister' (7#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v:8]
+INFO: [Synth 8-638] synthesizing module 'I2C_SDAmodule' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:5]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:15]
+INFO: [Synth 8-256] done synthesizing module 'I2C_SDAmodule' (8#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:5]
+INFO: [Synth 8-256] done synthesizing module 'I2C_DataUnit' (9#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_DataUnit.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ReadTMP101summer2021' (10#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v:12]
+INFO: [Synth 8-638] synthesizing module 'OneTemperatureConverter' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v:10]
+INFO: [Synth 8-256] done synthesizing module 'OneTemperatureConverter' (11#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v:10]
+INFO: [Synth 8-638] synthesizing module 'TemperatureRAM2021summer' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:7]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter MemorySize bound to: 100 - type: integer 
+	Parameter AddressBits bound to: 7 - type: integer 
+	Parameter LineFeed bound to: 8'b00001010 
+	Parameter CarriageReturn bound to: 8'b00001101 
+	Parameter NUL bound to: 8'b00000000 
+	Parameter DEGREE bound to: 8'b11111000 
+	Parameter SPACE bound to: 8'b00100000 
+INFO: [Synth 8-256] done synthesizing module 'TemperatureRAM2021summer' (12#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:7]
+WARNING: [Synth 8-689] width (7) of port connection 'address' does not match port width (8) of module 'TemperatureRAM2021summer' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:97]
+INFO: [Synth 8-638] synthesizing module 'SendTemperature' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:11]
+	Parameter AddressBits bound to: 7 - type: integer 
+	Parameter StartingAddress bound to: 7'b0000000 
+	Parameter NULL bound to: 0 - type: integer 
+	Parameter No bound to: 1 - type: integer 
+	Parameter Yes bound to: 0 - type: integer 
+	Parameter InitialState bound to: 2'b00 
+	Parameter TransmitState bound to: 2'b01 
+	Parameter WaitState bound to: 2'b10 
+	Parameter TransitState bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'SendTemperature' (13#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:11]
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2021summer' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v:6]
+	Parameter TRANSMITTED_BITS bound to: 8 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000011100100111000011100000000 
+INFO: [Synth 8-638] synthesizing module 'BaudRateGenerator' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'BaudRateGenerator' (14#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (15#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (16#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (17#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (18#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'MULT_AND' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-256] done synthesizing module 'MULT_AND' (19#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (20#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'MUXF5' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-256] done synthesizing module 'MUXF5' (21#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-638] synthesizing module 'MUXF6' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-256] done synthesizing module 'MUXF6' (22#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-638] synthesizing module 'FDRS' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRS' (23#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (24#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (24#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDE' (25#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (25#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (25#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (26#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (26#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FD' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FD' (27#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (28#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'bbfifo_16x8' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/bbfifo_16x8.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1011111110100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (28#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDR' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (29#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b11000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (29#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'bbfifo_16x8' (30#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/bbfifo_16x8.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (31#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_rx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_rx.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (31#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (31#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (32#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_rx.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (33#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_rx.v:76]
+INFO: [Synth 8-256] done synthesizing module 'UARTmodule2021summer' (34#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v:6]
+WARNING: [Synth 8-3848] Net read_from_uart in module/entity Lab2I2Cphase2TMP101summer2021template does not have driver. [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:83]
+INFO: [Synth 8-256] done synthesizing module 'Lab2I2Cphase2TMP101summer2021template' (35#1) [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:15]
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port WriteLoad
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port ReadorWrite
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port ShiftorHold
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port Select
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port BaudEnable
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port StartStopAck
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port DONE
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port Start
+WARNING: [Synth 8-3331] design ControllerReadTMP101template has unconnected port SDA
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:19 ; elapsed = 00:06:49 . Memory (MB): peak = 1039.355 ; gain = 832.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DelayUnit:Start to constant 0 [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:32]
+WARNING: [Synth 8-3295] tying undriven pin UARTunit:read_from_uart to constant 0 [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:115]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:19 ; elapsed = 00:06:50 . Memory (MB): peak = 1039.355 ; gain = 832.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.dcp' for cell 'SystemClockUnit'
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz_board.xdc] for cell 'SystemClockUnit/inst'
+Finished Parsing XDC File [c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz_board.xdc] for cell 'SystemClockUnit/inst'
+Parsing XDC File [c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xdc] for cell 'SystemClockUnit/inst'
+Finished Parsing XDC File [c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xdc] for cell 'SystemClockUnit/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab2I2Cphase2TMP101summer2021template_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab2I2Cphase2TMP101summer2021template_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021constraints.xdc]
+Finished Parsing XDC File [C:/Xilinx/SHCodesign2021/lab2summer2021HUST_I2C/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 26 instances
+  FDR => FDRE: 2 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  MULT_AND => LUT2: 3 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:26 ; elapsed = 00:06:54 . Memory (MB): peak = 1266.363 ; gain = 1059.059
+111 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1266.363 ; gain = 279.313
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 11 20:38:54 2021...
