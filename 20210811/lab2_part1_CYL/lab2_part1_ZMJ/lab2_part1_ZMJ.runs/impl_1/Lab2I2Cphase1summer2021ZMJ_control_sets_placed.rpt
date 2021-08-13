@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Aug 11 22:49:23 2021
+| Host         : LAPTOP-FH4P3DTM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab2I2Cphase1summer2021ZMJ_control_sets_placed.rpt
+| Design       : Lab2I2Cphase1summer2021ZMJ
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            1 |
+|      6 |            1 |
+|      7 |            2 |
+|      8 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              42 |           12 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              15 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+-----------------------------------+----------------------------------------+------------------+----------------+
+|            Clock Signal            |           Enable Signal           |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------------------------+-----------------------------------+----------------------------------------+------------------+----------------+
+|  SystemClock/inst/clk_out_60M      |                                   |                                        |                1 |              1 |
+|  SystemClock/inst/clk_out_60M      | ControlUnit/OneShotUnitNeg/E[0]   |                                        |                1 |              4 |
+|  SystemClock/inst/clk_out_60M      |                                   | Reset_IBUF                             |                3 |              6 |
+|  SystemClock/inst/clk_out_60M      | ControlUnit/WriteLoad_reg_i_1_n_0 | Reset_IBUF                             |                2 |              7 |
+|  ControlUnit/WriteLoad_reg_i_1_n_0 |                                   |                                        |                3 |              7 |
+|  SystemClock/inst/clk_out_60M      | ControlUnit/E[0]                  | Reset_IBUF                             |                2 |              8 |
+|  SystemClock/inst/clk_out_60M      |                                   | BaudUnit/baud_count[0]_i_1_n_0         |                4 |             16 |
+|  SystemClock/inst/clk_out_60M      |                                   | ControlUnit/DelayUnit/count[0]_i_1_n_0 |                5 |             20 |
++------------------------------------+-----------------------------------+----------------------------------------+------------------+----------------+
+
+

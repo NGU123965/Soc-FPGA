@@ -1,0 +1,41 @@
+Unable to capture context for thread 21680 in process 7920, can not generate back trace
+Unable to capture context for thread 22812 in process 7920, can not generate back trace
+Unable to capture context for thread 16552 in process 7920, can not generate back trace
+Unable to capture context for thread 22712 in process 7920, can not generate back trace
+Unable to capture context for thread 23044 in process 7920, can not generate back trace
+Exception at PC 0x00007FFB8030BB93
+Printing stacktrace...
+
+Unable to capture context for thread 16552 in process 7920, can not generate back trace
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+[0]  [0x00007FFB8030BB93]
+[1]  [0x00007FFB8030BB93]
+[2]  [0x00007FFB8030B4A1]
+[3]  [0x00007FFB8030B459]
+[4]  [0x00007FFB802F19FE]
+[5]  [0x00007FFB802F0ED1]
+[6]  [0x00007FFB802F0D76]
+[7]  [0x00007FFB802979F6]
+[8]  [0x00007FFB80287AFB]
+[9]  [0x00007FFB803AE90A]
+[10]  [0x00007FFB803C9F87]
+[11]  [0x00007FFB803CA05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FFC29DB7034]
+[13] (RtlUserThreadStart+0x21) [0x00007FFC2BD62651]
+Done
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9
+Exception at PC 0x00007FFC29664ED9

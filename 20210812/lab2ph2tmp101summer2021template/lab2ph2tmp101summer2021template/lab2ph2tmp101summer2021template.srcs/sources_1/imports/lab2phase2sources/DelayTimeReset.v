@@ -6,9 +6,9 @@
 //Start delay loop when Start=0
 module DelayTimeReset(input Reset, Clock, Start, output reg Timeout);
 //for simulation
-//parameter	MaxCount = 3;	//delay time in number of clock cycles
+parameter	MaxCount = 3;	//delay time in number of clock cycles
 //for board implementation
-parameter	MaxCount = 10000;	//delay time in number of clock cycles
+//parameter	MaxCount = 10000;	//delay time in number of clock cycles
 parameter 	NumberOfBits = 20;
 
 reg 	[NumberOfBits-1:0]	count;

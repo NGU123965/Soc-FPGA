@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/ClockedNegativeOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedNegativeOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/ClockedPositiveOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedPositiveOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/DelayTimeReset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DelayTimeReset
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_BaudRateGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_BaudRateGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_Controller_phase1_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_Controller_phase1_ZMJ
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_DataUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_DataUnit
+INFO: [VRFC 10-2458] undeclared symbol ShiftIn, assumed default net type wire [D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_DataUnit.v:23]
+INFO: [VRFC 10-2458] undeclared symbol ShiftOut, assumed default net type wire [D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_DataUnit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_SDAmodule_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_SDAmodule
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/Lab2I2Cphase1summer2021JJS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab2I2Cphase1summer2021ZMJ
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/Lab2I2Cphase1summer2021JJS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab2I2Cphase1summe2021ZMJ_tb

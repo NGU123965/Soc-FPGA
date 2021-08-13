@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "D:/IDE/vivado/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_tx.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_rx.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/bbfifo_16x8.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/DelayTimeReset.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_tx.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_rx.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/BaudRateGenerator.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_DataUnit.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz_clk_wiz.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/ip/SystemClk60MHz/SystemClk60MHz.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib  "../../../lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v" --include "../../../lab2ph2tmp101summer2021template.ip_user_files/ipstatic/clk_wiz_v5_3_1"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

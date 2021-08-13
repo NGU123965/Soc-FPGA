@@ -1,0 +1,70 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Aug 11 22:49:47 2021
+| Host         : LAPTOP-FH4P3DTM running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Lab2I2Cphase1summer2021ZMJ_methodology_drc_routed.rpt -pb Lab2I2Cphase1summer2021ZMJ_methodology_drc_routed.pb -rpx Lab2I2Cphase1summer2021ZMJ_methodology_drc_routed.rpx
+| Design       : Lab2I2Cphase1summer2021ZMJ
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch | 7          |
++-----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch ControlUnit/BaudEnable_reg cannot be properly analyzed as its control pin ControlUnit/BaudEnable_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch ControlUnit/ClearDelayLoop_reg cannot be properly analyzed as its control pin ControlUnit/ClearDelayLoop_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch ControlUnit/ReadorWrite_reg cannot be properly analyzed as its control pin ControlUnit/ReadorWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch ControlUnit/Select_reg cannot be properly analyzed as its control pin ControlUnit/Select_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch ControlUnit/ShiftorHold_reg cannot be properly analyzed as its control pin ControlUnit/ShiftorHold_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch ControlUnit/StartStopAck_reg cannot be properly analyzed as its control pin ControlUnit/StartStopAck_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch ControlUnit/WriteLoad_reg cannot be properly analyzed as its control pin ControlUnit/WriteLoad_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

@@ -1,0 +1,22 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 16cbb6e2721b41168219a0a2a862ce50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab2I2Cphase1summe2021ZMJ_tb_behav xil_defaultlib.Lab2I2Cphase1summe2021ZMJ_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 20 for port 'WaveFrequency' [D:/Projects/Vivado/lab2/lab2.srcs/sources_1/imports/lab2summer2021phase1files/Lab2I2Cphase1summer2021JJS.v:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.I2C_BaudRateGenerator
+Compiling module xil_defaultlib.DelayTimeReset
+Compiling module xil_defaultlib.ClockedNegativeOneShot
+Compiling module xil_defaultlib.ClockedPositiveOneShot
+Compiling module xil_defaultlib.I2C_Controller_phase1_ZMJ
+Compiling module xil_defaultlib.I2C_ShiftRegister
+Compiling module xil_defaultlib.I2C_SDAmodule
+Compiling module xil_defaultlib.I2C_DataUnit
+Compiling module xil_defaultlib.Lab2I2Cphase1summer2021ZMJ
+Compiling module xil_defaultlib.Lab2I2Cphase1summe2021ZMJ_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Lab2I2Cphase1summe2021ZMJ_tb_behav

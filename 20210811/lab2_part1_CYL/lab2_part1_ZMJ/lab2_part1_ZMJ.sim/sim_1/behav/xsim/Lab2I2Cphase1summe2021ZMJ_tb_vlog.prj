@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab2.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/ClockedNegativeOneShot.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/ClockedPositiveOneShot.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/DelayTimeReset.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_BaudRateGenerator.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_Controller_phase1_temp.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_DataUnit.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_SDAmodule_temp.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/I2C_ShiftRegister.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/Lab2I2Cphase1summer2021JJS.v" \
+"../../../../lab2.srcs/sources_1/imports/lab2summer2021phase1files/Lab2I2Cphase1summer2021JJS_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

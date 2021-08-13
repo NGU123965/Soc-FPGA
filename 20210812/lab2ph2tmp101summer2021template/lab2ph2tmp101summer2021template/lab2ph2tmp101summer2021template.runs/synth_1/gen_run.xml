@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1628857776">
+  <File Type="RDS-PROPCONSTRS" Name="Lab2I2Cphase2TMP101summer2021template_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Lab2I2Cphase2TMP101summer2021template.tcl"/>
+  <File Type="RDS-RDS" Name="Lab2I2Cphase2TMP101summer2021template.vds"/>
+  <File Type="RDS-UTIL" Name="Lab2I2Cphase2TMP101summer2021template_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Lab2I2Cphase2TMP101summer2021template_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Lab2I2Cphase2TMP101summer2021template.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Lab2I2Cphase2TMP101summer2021template_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Lab2I2Cphase2TMP101summer2021template_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/kcuart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/kcuart_tx.v"/>
+        <Attr Name="ImportTime" Val="1269032340"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/kcuart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/kcuart_rx.v"/>
+        <Attr Name="ImportTime" Val="1269032460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/bbfifo_16x8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/bbfifo_16x8.v"/>
+        <Attr Name="ImportTime" Val="1269032520"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/ClockedNegativeOneShot.v"/>
+        <Attr Name="ImportTime" Val="1628706486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/I2C_ShiftRegister.v"/>
+        <Attr Name="ImportTime" Val="1628706518"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/I2C_SDAmodule.v"/>
+        <Attr Name="ImportTime" Val="1628706530"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/DelayTimeReset.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/DelayTimeReset.v"/>
+        <Attr Name="ImportTime" Val="1628706464"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/ClockedPositiveOneShot.v"/>
+        <Attr Name="ImportTime" Val="1628706381"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1269032100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1269032100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/BaudRateGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/BaudRateGenerator.v"/>
+        <Attr Name="ImportTime" Val="1538147063"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2templatesources/ControllerReadTMP101template.v"/>
+        <Attr Name="ImportTime" Val="1628718652"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/I2C_DataUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/I2C_DataUnit.v"/>
+        <Attr Name="ImportTime" Val="1628706507"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/I2C_BaudRateGenerator.v"/>
+        <Attr Name="ImportTime" Val="1628706403"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/UARTmodule2021summer.v"/>
+        <Attr Name="ImportTime" Val="1628708598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/ReadTMP101summer2021.v"/>
+        <Attr Name="ImportTime" Val="1628705304"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/TemperatureRAM2021summer.v"/>
+        <Attr Name="ImportTime" Val="1628705366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/SendTemperature.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/SendTemperature.v"/>
+        <Attr Name="ImportTime" Val="1628705332"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/OneTemperatureConverter.v"/>
+        <Attr Name="ImportTime" Val="1628706572"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v"/>
+        <Attr Name="ImportTime" Val="1628718859"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/DelayLoop.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/DelayLoop.v"/>
+        <Attr Name="ImportTime" Val="1601879950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2phase2sources/DelayTime.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/lab2phase2sources/DelayTime.v"/>
+        <Attr Name="ImportTime" Val="1603256453"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab2I2Cphase2TMP101summer2021template"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/lab2ph2tmp101summer2021constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="SystemClk60MHz"/>
+</GenRun>

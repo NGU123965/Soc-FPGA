@@ -275,7 +275,7 @@ endmodule  
 ![Problem7 figure](<./problem7_waveforms.jpg>)
 
 ## PROBLEM  8
-### 8.(a)
+
 * TxDataUnit_summer2021HUST.v
 
 ```verilog
@@ -288,12 +288,14 @@ module TxDataUnit_summer2021HUST #(parameter DataLength=9)(
     wire ParityBit;
     assign Tx=ShiftRegister[0];
     assign ParityBit=Parity^Data[0]^Data[1]^Data[2]^Data[3]^Data[4]^Data[5]^Data[6]^Data[7]^Data[8]; 
-    always@(posedge Clock)
-        if (Reset==1 || Load==1)
-            ShiftRegister<={ParityBit, Data, 2'b01};
-    else if (ShiftOut == 1)
-        ShiftRegister <= {ShiftRegister[0], ShiftRegister[11:1]};
-    else ShiftRegister<=ShiftRegister; 
+    always@(negedge Clock) 
+        if(Reset==1) 
+            ShiftRegister<={ParityBit, Data, 2'b01}; 
+    else if(Load == 1)
+    		ShiftRegister <= {1'b1,ParityBit,Data,1'b0};
+ 	else if(ShiftOut==1) 
+        	ShiftRegister<={ShiftRegister[0], ShiftRegister[11:1]}; 
+ 	else ShiftRegister<=ShiftRegister; 
 endmodule
 ```
 
@@ -492,4 +494,5 @@ endmodule
 
 * waveform
 
-![Problem8 figure](<./problem8_result.jpg>)
+![Problem8 figure](<./problem8_resuilt.jpg>)
+

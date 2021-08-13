@@ -1,0 +1,204 @@
+
+*** Running vivado
+    with args -log Lab2I2Cphase2TMP101summer2021template.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Lab2I2Cphase2TMP101summer2021template.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Lab2I2Cphase2TMP101summer2021template.tcl -notrace
+Command: synth_design -top Lab2I2Cphase2TMP101summer2021template -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16180 
+WARNING: [Synth 8-2507] parameter declaration becomes local in TemperatureRAM2021summer with formal parameter declaration list [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:14]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:16]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:17]
+WARNING: [Synth 8-2507] parameter declaration becomes local in SendTemperature with formal parameter declaration list [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 283.867 ; gain = 76.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Lab2I2Cphase2TMP101summer2021template' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:15]
+	Parameter I2CBaudRate bound to: 20'b00000011101010011000 
+	Parameter ClockFrequency bound to: 30'b000011100100111000011100000000 
+	Parameter RAMAddressSize bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SystemClk60MHz' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.runs/synth_1/.Xil/Vivado-1152-DESKTOP-5VFR65I/realtime/SystemClk60MHz_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'SystemClk60MHz' (1#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.runs/synth_1/.Xil/Vivado-1152-DESKTOP-5VFR65I/realtime/SystemClk60MHz_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'ClockedPositiveOneShot' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v:7]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedPositiveOneShot' (2#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedPositiveOneShot.v:7]
+INFO: [Synth 8-638] synthesizing module 'ReadTMP101summer2021' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v:12]
+INFO: [Synth 8-638] synthesizing module 'I2C_BaudRateGenerator' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'I2C_BaudRateGenerator' (3#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'ControllerReadTMP101template' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+	Parameter InitialState bound to: 4'b0000 
+	Parameter StartState bound to: 4'b0001 
+	Parameter LoadState bound to: 4'b0010 
+	Parameter WriteState bound to: 4'b0011 
+	Parameter AcknowledgeState1 bound to: 4'b0100 
+	Parameter ConnectedState bound to: 4'b0101 
+	Parameter ReadState bound to: 4'b0110 
+	Parameter WaitState bound to: 4'b0111 
+	Parameter AcknowledgeState2 bound to: 4'b1000 
+	Parameter TransitState bound to: 4'b1001 
+	Parameter StopState bound to: 4'b1010 
+INFO: [Synth 8-638] synthesizing module 'DelayTimeReset' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/DelayTimeReset.v:7]
+	Parameter MaxCount bound to: 3 - type: integer 
+	Parameter NumberOfBits bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DelayTimeReset' (4#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/DelayTimeReset.v:7]
+INFO: [Synth 8-638] synthesizing module 'ClockedNegativeOneShot' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v:7]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedNegativeOneShot' (5#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ClockedNegativeOneShot.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:46]
+INFO: [Synth 8-256] done synthesizing module 'ControllerReadTMP101template' (6#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v:19]
+INFO: [Synth 8-638] synthesizing module 'I2C_DataUnit' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_DataUnit.v:11]
+	Parameter LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'I2C_ShiftRegister' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v:8]
+	Parameter LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'I2C_ShiftRegister' (7#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_ShiftRegister.v:8]
+INFO: [Synth 8-638] synthesizing module 'I2C_SDAmodule' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:5]
+INFO: [Synth 8-226] default block is never used [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:15]
+INFO: [Synth 8-256] done synthesizing module 'I2C_SDAmodule' (8#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_SDAmodule.v:5]
+INFO: [Synth 8-256] done synthesizing module 'I2C_DataUnit' (9#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/I2C_DataUnit.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ReadTMP101summer2021' (10#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/ReadTMP101summer2021.v:12]
+INFO: [Synth 8-638] synthesizing module 'OneTemperatureConverter' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v:10]
+INFO: [Synth 8-256] done synthesizing module 'OneTemperatureConverter' (11#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/OneTemperatureConverter.v:10]
+INFO: [Synth 8-638] synthesizing module 'TemperatureRAM2021summer' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:7]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter MemorySize bound to: 100 - type: integer 
+	Parameter AddressBits bound to: 7 - type: integer 
+	Parameter LineFeed bound to: 8'b00001010 
+	Parameter CarriageReturn bound to: 8'b00001101 
+	Parameter NUL bound to: 8'b00000000 
+	Parameter DEGREE bound to: 8'b11111000 
+	Parameter SPACE bound to: 8'b00100000 
+INFO: [Synth 8-256] done synthesizing module 'TemperatureRAM2021summer' (12#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/TemperatureRAM2021summer.v:7]
+WARNING: [Synth 8-689] width (7) of port connection 'address' does not match port width (8) of module 'TemperatureRAM2021summer' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:97]
+INFO: [Synth 8-638] synthesizing module 'SendTemperature' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:11]
+	Parameter AddressBits bound to: 7 - type: integer 
+	Parameter StartingAddress bound to: 7'b0000000 
+	Parameter NULL bound to: 0 - type: integer 
+	Parameter No bound to: 1 - type: integer 
+	Parameter Yes bound to: 0 - type: integer 
+	Parameter InitialState bound to: 2'b00 
+	Parameter TransmitState bound to: 2'b01 
+	Parameter WaitState bound to: 2'b10 
+	Parameter TransitState bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'SendTemperature' (13#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/SendTemperature.v:11]
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2021summer' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v:6]
+	Parameter TRANSMITTED_BITS bound to: 8 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000011100100111000011100000000 
+INFO: [Synth 8-638] synthesizing module 'BaudRateGenerator' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'BaudRateGenerator' (14#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (15#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (16#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (17#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (18#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'MULT_AND' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-256] done synthesizing module 'MULT_AND' (19#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (20#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'MUXF5' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-256] done synthesizing module 'MUXF5' (21#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-638] synthesizing module 'MUXF6' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-256] done synthesizing module 'MUXF6' (22#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-638] synthesizing module 'FDRS' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRS' (23#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (24#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (24#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDE' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDE' (25#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (25#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (25#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (26#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (26#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FD' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FD' (27#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (28#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'bbfifo_16x8' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/bbfifo_16x8.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1011111110100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (28#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDR' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (29#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b11000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (29#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'bbfifo_16x8' (30#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/bbfifo_16x8.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (31#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_rx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_rx.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (31#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (31#1) [D:/IDE/vivado/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (32#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/kcuart_rx.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (33#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/uart_rx.v:76]
+INFO: [Synth 8-256] done synthesizing module 'UARTmodule2021summer' (34#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2sources/UARTmodule2021summer.v:6]
+WARNING: [Synth 8-3848] Net read_from_uart in module/entity Lab2I2Cphase2TMP101summer2021template does not have driver. [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:83]
+INFO: [Synth 8-256] done synthesizing module 'Lab2I2Cphase2TMP101summer2021template' (35#1) [D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/Lab2I2Cphase2TMP101summer2021template.v:15]
+TclStackFree: incorrect freePtr. Call out of sequence?

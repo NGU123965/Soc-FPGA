@@ -1,0 +1,1 @@
+-wto "5973ea0c7fa24710bf204ab33c9741a7" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xpm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Lab2I2Cphase2TMP101summer2021template_behav" "xil_defaultlib.Lab2I2Cphase2TMP101summer2021template" "xil_defaultlib.glbl" -log "elaborate.log" 

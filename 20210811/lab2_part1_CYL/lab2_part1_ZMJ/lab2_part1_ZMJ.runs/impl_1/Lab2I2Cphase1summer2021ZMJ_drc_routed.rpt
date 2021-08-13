@@ -1,0 +1,47 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Aug 11 22:49:46 2021
+| Host         : LAPTOP-FH4P3DTM running 64-bit major release  (build 9200)
+| Command      : report_drc -file Lab2I2Cphase1summer2021ZMJ_drc_routed.rpt -pb Lab2I2Cphase1summer2021ZMJ_drc_routed.pb -rpx Lab2I2Cphase1summer2021ZMJ_drc_routed.rpx
+| Design       : Lab2I2Cphase1summer2021ZMJ
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+--------------------+------------+
+| Rule     | Severity | Description        | Violations |
++----------+----------+--------------------+------------+
+| PDRC-153 | Warning  | Gated clock check  | 1          |
+| ZPS7-1   | Warning  | PS7 block required | 1          |
++----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net ControlUnit/WriteLoad_reg_i_1_n_0 is a gated clock net sourced by a combinational pin ControlUnit/WriteLoad_reg_i_1/O, cell ControlUnit/WriteLoad_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

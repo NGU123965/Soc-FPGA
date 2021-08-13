@@ -14,7 +14,7 @@ module ControllerReadTMP101_tb;
 //output reg WriteLoad, ReadorWrite, ShiftorHold, Select, BaudEnable,
 //output reg StartStopAck, DONE);
 //
-ControllerReadTMP101 uut (Reset, clock, Go, ClockI2C, SDA, WriteLoad, ReadorWrite, ShiftorHold, Select, 
+ControllerReadTMP101template uut (Reset, clock, Go, ClockI2C, SDA, WriteLoad, ReadorWrite, ShiftorHold, Select, 
 	BaudEnable, StartStopAck, DONE);
 	
 	initial begin  Go = 0;  Reset = 0;  ClockI2C = 0;  clock = 0; end

@@ -1,0 +1,18 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/IDE/vivado/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 5973ea0c7fa24710bf204ab33c9741a7 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot ControllerReadTMP101_tb_behav xil_defaultlib.ControllerReadTMP101_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v" Line 19. Module ControllerReadTMP101template doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/资料/学习资料/课程资料/大三种子班/大三下/soc/Soc-FPGA/20210812/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template/lab2ph2tmp101summer2021template.srcs/sources_1/imports/lab2phase2templatesources/ControllerReadTMP101template.v" Line 19. Module ControllerReadTMP101template doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DelayTimeReset
+Compiling module xil_defaultlib.ClockedNegativeOneShot
+Compiling module xil_defaultlib.ClockedPositiveOneShot
+Compiling module xil_defaultlib.ControllerReadTMP101template
+Compiling module xil_defaultlib.ControllerReadTMP101_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ControllerReadTMP101_tb_behav
