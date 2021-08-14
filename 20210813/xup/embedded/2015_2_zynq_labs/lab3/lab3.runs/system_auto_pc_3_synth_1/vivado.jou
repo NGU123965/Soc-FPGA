@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Dec  7 09:38:08 2020
+# Process ID: 15564
+# Current directory: E:/Soc/Lab3/xup/embedded/2015_2_zynq_labs/lab3/lab3.runs/system_auto_pc_3_synth_1
+# Command line: vivado.exe -log system_auto_pc_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_auto_pc_3.tcl
+# Log file: E:/Soc/Lab3/xup/embedded/2015_2_zynq_labs/lab3/lab3.runs/system_auto_pc_3_synth_1/system_auto_pc_3.vds
+# Journal file: E:/Soc/Lab3/xup/embedded/2015_2_zynq_labs/lab3/lab3.runs/system_auto_pc_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_auto_pc_3.tcl -notrace
